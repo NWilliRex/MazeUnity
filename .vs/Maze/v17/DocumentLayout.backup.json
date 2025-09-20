@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\session7\\dev_jeuvideo\\Maze\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\session7\\dev_jeuvideo\\maze\\assets\\scripts\\testclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\testclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\enemydamageoncontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemydamageoncontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\fadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\dooropener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dooropener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|E:\\session7\\dev_jeuvideo\\Maze\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203E294F-6A57-B963-05D6-83EB30201135}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Glow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Glow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Halo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Halo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestClick.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\TestClick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TestClick.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\TestClick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TestClick.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T19:08:50.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAqwE0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T19:39:31.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Glow.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Glow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Glow.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Glow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Glow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T01:27:01.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Halo.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Halo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Halo.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\Halo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Halo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T00:47:48.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FadeOut.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\FadeOut.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FadeOut.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\FadeOut.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FadeOut.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:30:24.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMove.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:40:46.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyDamageOnContact.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\EnemyDamageOnContact.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyDamageOnContact.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\EnemyDamageOnContact.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyDamageOnContact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:53:04.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoorOpener.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\DoorOpener.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DoorOpener.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\DoorOpener.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DoorOpener.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:26:43.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:24:10.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "E:\\session7\\dev_jeuvideo\\Maze\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T06:21:26.718Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

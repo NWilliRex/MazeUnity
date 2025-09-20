@@ -1,0 +1,26 @@
+[Librarie]
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Ignore les fichiers générés par Unity
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Cache de Rider/VS
+.vscode/
+.idea/
+*.dotCover
