@@ -1060,7 +1060,44 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AnimatedProps_0: 6680805883803914851
+      AnimatedProps_1: -8937106639774539752
+      AnimatedProps_10: -2470689813042429843
+      AnimatedProps_11: -4334109013221104310
+      AnimatedProps_12: -190339795156468978
+      AnimatedProps_13: -3643758785358791732
+      AnimatedProps_14: -7084913435465531245
+      AnimatedProps_15: -3809998339730083790
+      AnimatedProps_16: -7310054527876440393
+      AnimatedProps_17: 2430954666884656364
+      AnimatedProps_18: 7258121594098003932
+      AnimatedProps_19: -3568708659477949443
+      AnimatedProps_2: -4280515404922337199
+      AnimatedProps_20: -1056129170662523464
+      AnimatedProps_21: 8970063775474942243
+      AnimatedProps_22: 4924747217174300324
+      AnimatedProps_23: 5834189654664122348
+      AnimatedProps_24: -7901637595501234774
+      AnimatedProps_25: 2249355849402855983
+      AnimatedProps_26: -7611076301172058650
+      AnimatedProps_27: 3183691639014727369
+      AnimatedProps_28: -8621090945970178282
+      AnimatedProps_29: -5666881726717085396
+      AnimatedProps_3: 6530859287484786091
+      AnimatedProps_30: 1624632929298274395
+      AnimatedProps_31: -4145752167472714375
+      AnimatedProps_32: -2698089780206584391
+      AnimatedProps_33: 2766558362925591141
+      AnimatedProps_34: -8287600263026108521
+      AnimatedProps_35: -168746804135811918
+      AnimatedProps_36: 1920017070524895976
+      AnimatedProps_4: 8930106699176706114
+      AnimatedProps_5: -4577311264293887365
+      AnimatedProps_6: 1217717572361309298
+      AnimatedProps_7: 714806155859858680
+      AnimatedProps_8: 4454047763284838944
+      AnimatedProps_9: 8211819374071386650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

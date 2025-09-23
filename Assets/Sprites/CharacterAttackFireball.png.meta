@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterAttackFireball_0: -1357067968522304769
+      CharacterAttackFireball_1: 2850561221822845723
+      CharacterAttackFireball_2: 1360604194852853253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
