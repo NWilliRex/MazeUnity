@@ -21,7 +21,8 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip healClip;   // Son joué lors du soin
 
     public float reloadDelay = 2f;
-    public string sceneToLoad = "GameOver";
+    public string sceneName = "GameOver";
+   
 
 
     void Awake()
@@ -91,22 +92,16 @@ public class PlayerHealth : MonoBehaviour
         // Après la durée de l’animation, rendre invisible et recharger la scène
         Invoke(nameof(DisappearAndReload), deathAnimationDuration);
 
+        SceneManager.LoadScene(sceneName); 
 
-    }
 
-    IEnumerator CoDelay(string name, float seconds)
-    {
-        yield return new WaitForSecondsRealtime(seconds);
-        SceneManager.LoadScene(name);
-        if (reloadDelay <= 0f) SceneManager.LoadScene(sceneToLoad);
-        else StartCoroutine(CoDelay(sceneToLoad, reloadDelay));
     }
 
 
     void DisappearAndReload()
     {
         spriteRenderer.enabled = false; // rend le joueur invisible
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // recharge la scène
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // recharge la scène
     }
 
 
