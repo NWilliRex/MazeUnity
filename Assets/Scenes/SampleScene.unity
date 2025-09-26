@@ -36305,7 +36305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: 71}
+  m_AnchoredPosition: {x: -419, y: 71}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984804871
@@ -38243,7 +38243,6 @@ GameObject:
   - component: {fileID: 1305073144}
   - component: {fileID: 1305073143}
   - component: {fileID: 1305073142}
-  - component: {fileID: 1305073141}
   - component: {fileID: 1305073146}
   - component: {fileID: 1305073145}
   - component: {fileID: 1305073147}
@@ -38254,19 +38253,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1305073141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305073140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c264e090116224b4b9c89eaa6ae7d580, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 1305073140}
 --- !u!95 &1305073142
 Animator:
   serializedVersion: 7
@@ -38446,8 +38432,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c264e090116224b4b9c89eaa6ae7d580, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::DoorOpener
+  door: {fileID: 1305073140}
+  victorySceneName: Victory
+  delayBeforeVictory: 1.5
 --- !u!1 &1373237788
 GameObject:
   m_ObjectHideFlags: 0
@@ -39758,6 +39746,7 @@ GameObject:
   - component: {fileID: 1727299475}
   - component: {fileID: 1727299476}
   - component: {fileID: 1727299478}
+  - component: {fileID: 1727299479}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -39859,7 +39848,7 @@ Transform:
   m_GameObject: {fileID: 1727299469}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 116.45, y: -65.46, z: 0}
+  m_LocalPosition: {x: 116.45, y: -65.45, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39970,6 +39959,20 @@ MonoBehaviour:
   healClip: {fileID: 8300000, guid: 6f8b791f22ca5684f889b204fb12de74, type: 3}
   reloadDelay: 2
   sceneName: GameOver
+--- !u!114 &1727299479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727299469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b30fa197c02e3a45b0e826fa175d1cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadeOut2D
+  fadeDuration: 1
+  destroyAfter: 1
 --- !u!1 &1735940355
 GameObject:
   m_ObjectHideFlags: 0
@@ -41066,7 +41069,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7628897034881489312, guid: 65e6d2874d34db843ba4a975fd7da531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -41088,7 +41091,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 81.30033, y: -60.44395, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 139938751}

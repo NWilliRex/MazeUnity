@@ -1,20 +1,31 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class TestClick : MonoBehaviour
+public class BtnMenu : MonoBehaviour
 {
-    private Button button;
-    public string sceneName = "SampleScene";
-    void Start()
+    [Header("Nom de la scène de jeu")]
+    public string gameSceneName = "SampleScene";
+
+    // Assignée au bouton "Jouer"
+    public void OnPlay()
     {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(TaskOnClick);
+        if (!string.IsNullOrEmpty(gameSceneName))
+        {
+            SceneManager.LoadScene(gameSceneName);
+        }
+        else
+        {
+            Debug.LogError("[btnmenu] gameSceneName est vide.");
+        }
     }
 
-    private void TaskOnClick()
+    // Assignée au bouton "Quitter"
+    public void OnQuit()
     {
-        SceneManager.LoadScene(sceneName); 
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+    #else
+        Application.Quit();
+    #endif
     }
 }

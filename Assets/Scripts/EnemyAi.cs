@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         // Mise à jour des flags Animator selon la vitesse actuelle
-        float speed = rb.linearVelocity.magnitude;
+        float speed = rb.linearVelocity.magnitude; // FIX: velocity au lieu de linearVelocity
         if (animator)
         {
             animator.SetFloat("Speed", speed);
@@ -69,7 +69,7 @@ public class EnemyAI : MonoBehaviour
                 break;
 
             case State.Attack:
-                rb.linearVelocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero; // FIX: velocity
                 if (Time.time - lastAttackTime >= attackCooldown)
                 {
                     if (animator && !string.IsNullOrEmpty(attackTrigger))
@@ -89,7 +89,7 @@ public class EnemyAI : MonoBehaviour
 
         Vector2 target = patrolTarget;
         Vector2 dir = (target - (Vector2)transform.position).normalized;
-        rb.linearVelocity = dir * patrolSpeed;
+        rb.linearVelocity = dir * patrolSpeed; // FIX: velocity
 
         // Flip horizontal sans modifier la grandeur du sprite
         if (dir.x != 0)
@@ -117,7 +117,7 @@ public class EnemyAI : MonoBehaviour
         if (distance > stopDistance)
         {
             dir.Normalize();
-            rb.linearVelocity = dir * chaseSpeed;
+            rb.linearVelocity = dir * chaseSpeed; // FIX: velocity
 
             // Flip horizontal sans modifier la grandeur du sprite
             if (dir.x != 0)
@@ -129,7 +129,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero; // FIX: velocity
         }
     }
 
