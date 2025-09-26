@@ -13964,7 +13964,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13992,7 +13992,8 @@ Transform:
   m_LocalPosition: {x: 115.13, y: -65.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1269292853}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -36305,8 +36306,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -419, y: 71}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -843.8126, y: 318.8929}
+  m_SizeDelta: {x: 184.3747, y: 148.2141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984804871
 MonoBehaviour:
@@ -37871,7 +37872,7 @@ Canvas:
   m_GameObject: {fileID: 1269292849}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -37898,7 +37899,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 984804870}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -41360,7 +41361,6 @@ SceneRoots:
   - {fileID: 1300086336}
   - {fileID: 91863716}
   - {fileID: 1727299473}
-  - {fileID: 1269292853}
   - {fileID: 1080039787}
   - {fileID: 1254675955}
   - {fileID: 1038471968}
