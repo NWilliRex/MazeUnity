@@ -4,105 +4,118 @@ using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 5;
+    [Header("Santé")]
+    public int maxHealth = 7;           // PV max du joueur
     private int currentHealth;
 
-    public float deathAnimationDuration = 0.6f;
+    [Header("Vies globales")]
+    public int maxLives = 3;            // Nombre de tentatives
+    private int currentLives;
+
+    [Header("Mort & Respawn")]
+    public float deathAnimationDuration = 1f;
+    public Transform respawnPoint;      // Dernier checkpoint activé
+    public string gameOverScene = "GameOver";
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private PlayerMove playerMove;
 
-    [Header("Audio - Mort")]
-    public AudioSource deathAudio;    // AudioSource pour la mort
-    public AudioClip deathClip;       // Son joué lors de la mort
-
-    [Header("Audio - Soin")]
-    public AudioSource healAudio;     // AudioSource pour le soin
-    public AudioClip healClip;   // Son joué lors du soin
-
-    public float reloadDelay = 2f;
-    public string sceneName = "GameOver";
-   
-
+    [Header("Audio")]
+    public AudioSource deathAudio;
+    public AudioClip deathClip;
+    public AudioSource healAudio;
+    public AudioClip healClip;
 
     void Awake()
     {
         currentHealth = maxHealth;
+        currentLives = maxLives;
+
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerMove = GetComponent<PlayerMove>();
 
-        // Initialisation de l'AudioSource pour la mort si non assignée
-        if (deathAudio == null)
-        {
-            deathAudio = gameObject.AddComponent<AudioSource>();
-        }
+        if (deathAudio == null) deathAudio = gameObject.AddComponent<AudioSource>();
+        if (healAudio == null) healAudio = gameObject.AddComponent<AudioSource>();
+
         deathAudio.loop = false;
-        deathAudio.playOnAwake = false;
-
-        // Initialisation de l'AudioSource pour le soin si non assignée
-        if (healAudio == null)
-        {
-            healAudio = gameObject.AddComponent<AudioSource>();
-        }
         healAudio.loop = false;
-        healAudio.playOnAwake = false;
+
+        // Si aucun checkpoint, respawn = spawn initial
+        if (respawnPoint == null)
+        {
+            GameObject startPoint = new GameObject("StartPoint");
+            startPoint.transform.position = transform.position;
+            respawnPoint = startPoint.transform;
+        }
     }
 
-    // Méthode pour subir des dégâts
+    // Subir des dégâts
     public void TakeDamage(int dmg)
     {
-        if (currentHealth <= 0) return; // déjà mort
+        if (currentHealth <= 0) return;
 
         currentHealth -= dmg;
-        Debug.Log("Player prend " + dmg + " dégâts. HP restants = " + currentHealth);
+        Debug.Log("PV actuels = " + currentHealth);
 
         if (currentHealth <= 0) Die();
     }
 
-    // Méthode pour soigner le joueur
+    // Soin
     public void Heal(int amount)
     {
-        if (currentHealth <= 0) return; // ne soigne pas si mort
+        if (currentHealth <= 0) return;
 
         currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // pas dépasser le max
-        Debug.Log("Player récupère " + amount + " PV. HP = " + currentHealth);
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        // Jouer le son du soin
-        if (healClip != null)
-        {
-            healAudio.PlayOneShot(healClip);
-        }
+        if (healClip != null) healAudio.PlayOneShot(healClip);
+        Debug.Log("PV après soin = " + currentHealth);
     }
 
-    // Gestion de la mort
+    // Mort
     void Die()
     {
         Debug.Log("Player est mort !");
 
-        // Jouer le son de mort
-        if (deathClip != null)
-        {
-            deathAudio.PlayOneShot(deathClip);
-        }
-
-        // Lancer l’animation de mort
+        if (deathClip != null) deathAudio.PlayOneShot(deathClip);
         animator.SetTrigger("Dead");
 
-        // Après la durée de l’animation, rendre invisible et recharger la scène
-        Invoke(nameof(DisappearAndReload), deathAnimationDuration);
+        if (playerMove) playerMove.enabled = false;
 
-        SceneManager.LoadScene(sceneName); 
-
-
+        StartCoroutine(RespawnOrGameOver());
     }
 
-
-    void DisappearAndReload()
+    // Vérifie si GameOver ou respawn
+    IEnumerator RespawnOrGameOver()
     {
-        spriteRenderer.enabled = false; // rend le joueur invisible
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // recharge la scène
+        yield return new WaitForSeconds(deathAnimationDuration);
+
+        currentLives--;
+
+        if (currentLives <= 0)
+        {
+            Debug.Log("Plus de vies, Game Over !");
+            SceneManager.LoadScene(gameOverScene);
+        }
+        else
+        {
+            Respawn();
+        }
     }
 
+    // Respawn au dernier checkpoint
+    void Respawn()
+    {
+        Debug.Log("Respawn au checkpoint. Vies restantes = " + currentLives);
 
+        currentHealth = maxHealth;
+        transform.position = respawnPoint.position;
+
+        spriteRenderer.enabled = true;
+        if (playerMove) playerMove.enabled = true;
+
+        animator.ResetTrigger("Dead");
+    }
 }

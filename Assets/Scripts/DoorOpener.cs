@@ -11,7 +11,7 @@ public class DoorOpener : MonoBehaviour
     public string victorySceneName = "Victory";
 
     [Header("Durée avant de changer de scène (en secondes)")]
-    public float delayBeforeVictory = 1.5f; // mets la durée de ton animation
+    public float delayBeforeVictory = 2f; // mets la durée de ton animation
 
     void Start()
     {
@@ -23,10 +23,16 @@ public class DoorOpener : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // 1) Joue l’anim de la porte
             if (doorAnimator)
                 doorAnimator.SetTrigger("OpenDoor");
 
-            // Lance la coroutine pour attendre la fin de l'anim avant de charger la scène
+            // 2) Bloque les contrôles du joueur
+            var playerMovement = other.GetComponent<PlayerMove>(); 
+            if (playerMovement)
+                playerMovement.enabled = false;
+
+            // 3) Lance la coroutine avec délai
             StartCoroutine(LoadVictoryAfterDelay());
         }
     }
