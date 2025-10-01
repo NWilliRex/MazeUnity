@@ -2,20 +2,32 @@ using UnityEngine;
 
 public class HealthPotion : MonoBehaviour
 {
-    public int healAmount = 1; // combien de PV ça rend
+    [Header("Quantité de soin")]
+    public int healAmount = 1; // Nombre de PV que la potion rend
 
-    void OnTriggerEnter2D(Collider2D other)
+    [Header("Audio")]
+    public AudioSource pickupAudio; // Son joué lors de la prise
+    public AudioClip pickupClip;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.Heal(healAmount); // ajoute les PV
-            }
+        // Vérifie si le joueur touche la potion
+        if (!other.CompareTag("Player")) return;
 
-            // Disparaît après utilisation
-            Destroy(gameObject);
+        // Cherche le script PlayerHealth sur le joueur
+        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.Heal(healAmount); // Applique le soin
         }
+
+        // Jouer le son de ramassage si assigné
+        if (pickupAudio != null && pickupClip != null)
+        {
+            pickupAudio.PlayOneShot(pickupClip);
+        }
+
+        // Détruire la potion après utilisation
+        Destroy(gameObject);
     }
 }

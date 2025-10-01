@@ -28,7 +28,7 @@ public class EnemyDamageOnContact : MonoBehaviour
     /// <summary>
     /// Dégâts infligés à chaque "hit".
     /// </summary>
-    public int damage = 2;
+    public int damage = 1;
 
     /// <summary>
     /// Délai minimal entre deux coups sur le même joueur (en secondes).

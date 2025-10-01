@@ -5,16 +5,16 @@ using System.Collections;
 public class PlayerHealth : MonoBehaviour
 {
     [Header("Santé")]
-    public int maxHealth = 7;           // PV max du joueur
+    public int maxHealth = 7; // PV max du joueur
     private int currentHealth;
 
     [Header("Vies globales")]
-    public int maxLives = 3;            // Nombre de tentatives
+    public int maxLives = 3; // Nombre de tentatives
     private int currentLives;
 
     [Header("Mort & Respawn")]
     public float deathAnimationDuration = 1f;
-    public Transform respawnPoint;      // Dernier checkpoint activé
+    public Transform respawnPoint; // Dernier checkpoint activé
     public string gameOverScene = "GameOver";
 
     private Animator animator;
@@ -36,8 +36,11 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerMove = GetComponent<PlayerMove>();
 
-        if (deathAudio == null) deathAudio = gameObject.AddComponent<AudioSource>();
-        if (healAudio == null) healAudio = gameObject.AddComponent<AudioSource>();
+        if (deathAudio == null)
+            deathAudio = gameObject.AddComponent<AudioSource>();
+
+        if (healAudio == null)
+            healAudio = gameObject.AddComponent<AudioSource>();
 
         deathAudio.loop = false;
         healAudio.loop = false;
@@ -70,7 +73,9 @@ public class PlayerHealth : MonoBehaviour
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        if (healClip != null) healAudio.PlayOneShot(healClip);
+        if (healClip != null)
+            healAudio.PlayOneShot(healClip);
+
         Debug.Log("PV après soin = " + currentHealth);
     }
 
@@ -79,10 +84,13 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player est mort !");
 
-        if (deathClip != null) deathAudio.PlayOneShot(deathClip);
+        if (deathClip != null)
+            deathAudio.PlayOneShot(deathClip);
+
         animator.SetTrigger("Dead");
 
-        if (playerMove) playerMove.enabled = false;
+        if (playerMove)
+            playerMove.enabled = false;
 
         StartCoroutine(RespawnOrGameOver());
     }
@@ -118,4 +126,12 @@ public class PlayerHealth : MonoBehaviour
 
         animator.ResetTrigger("Dead");
     }
+
+    // 🔹 Méthode publique pour HeartUI
+   // Permet à d'autres scripts de lire la vie actuelle
+    public int CurrentHealth
+    {
+        get { return currentHealth; }
+    }
+
 }
