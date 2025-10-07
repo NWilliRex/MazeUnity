@@ -2456,7 +2456,7 @@ MonoBehaviour:
   patrolSpeed: 2
   chaseSpeed: 3.2
   stopDistance: 1.2
-  detectionRadius: 2
+  detectionRadius: 4
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
@@ -39492,7 +39492,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -39522,7 +39522,7 @@ MonoBehaviour:
   - {fileID: 1759803487}
   - {fileID: 1391053076}
   fullHeartSprite: {fileID: 21300000, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
-  emptyHeartSprite: {fileID: 21300002, guid: fed24bd82cefc0c4a8ef64dab6231b53, type: 3}
+  emptyHeartSprite: {fileID: 21300002, guid: 4432b1aa815454c44a4c839995c5882d, type: 3}
 --- !u!1 &1243049990
 GameObject:
   m_ObjectHideFlags: 0
@@ -39863,7 +39863,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -39874,7 +39874,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1269292853
 RectTransform:
@@ -44832,7 +44832,7 @@ MonoBehaviour:
   patrolSpeed: 2
   chaseSpeed: 3.2
   stopDistance: 1.2
-  detectionRadius: 2
+  detectionRadius: 4
   playerLayer:
     serializedVersion: 2
     m_Bits: 0
